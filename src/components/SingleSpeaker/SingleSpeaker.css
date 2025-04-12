@@ -1,0 +1,44 @@
+.single-speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.single-speaker-image-container {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: #bbbbbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.single-speaker-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* object-position: 50% 30%; */
+}
+.single-speaker-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .single-speaker-name {
+    font-size: 20px;
+  }
+
+  .single-speaker-image-container {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .single-speaker-name {
+    font-size: 24px;
+  }
+}

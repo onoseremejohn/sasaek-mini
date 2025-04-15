@@ -4,12 +4,13 @@
   align-items: center;
   max-width: 250px;
   justify-content: space-between;
-  /* gap: 70px; */
+  gap: 35px;
 }
 
 .supporter-logo {
-  /* max-width: 250px; */
-  max-height: 105px;
+  height: 105px;
+  width: auto;
+  object-fit: contain;
 }
 
 .supporter-title {
@@ -22,14 +23,17 @@
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (min-width: 768px) {
   .single-supporter {
-    /* gap: 70px; */
-  }
-  .supporter-logo {
-    /* max-width: 308px; */
+    gap: 50px;
   }
 
   .supporter-title {

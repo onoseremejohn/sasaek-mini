@@ -7,6 +7,7 @@ import {
   MobileChevronRight,
   MobileChevronRight2,
   StarIcon,
+  PenIcon,
 } from "../../icons";
 import Mould from "../../assets/mould.png";
 
@@ -108,6 +109,9 @@ const AppSectionRight = () => {
                 objectFit: "cover",
               }}
             />
+          </div>
+          <div className="footer-icon">
+            <PenIcon />
           </div>
           <div
             style={{

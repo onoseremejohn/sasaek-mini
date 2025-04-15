@@ -6,21 +6,22 @@
 }
 
 .single-speaker-image-container {
-  width: 270px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: #bbbbbb;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   margin-bottom: 16px;
 }
 .single-speaker-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
-  /* object-position: 50% 30%; */
 }
 .single-speaker-name {
   font-size: 16px;
@@ -35,6 +36,8 @@
 
   .single-speaker-image-container {
     margin-bottom: 20px;
+    width: 270px;
+    height: 270px;
   }
 }
 @media (min-width: 1200px) {

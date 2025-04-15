@@ -1,5 +1,5 @@
 import "./Speakers.css";
-import { ChevronRight, DenimBG } from "../../icons";
+import { ChevronRight } from "../../icons";
 import Chairman from "../../assets/chairman.png";
 import Signature from "../../assets/signature.jpg";
 import Speaker1 from "../../assets/speaker1.png";
@@ -44,18 +44,21 @@ function Speakers() {
         <div className="chairman-pic-container">
           <img src={Chairman} alt="Chairman" className="chairman-pic" />
 
-          <div className="background-arc">
-            <DenimBG />
-          </div>
+          <div className="background-arc" />
         </div>
       </div>
       <div className="other-speakers">
-        <SingleSpeaker name="오덕균 이사장" image={Speaker1} />
+        <SingleSpeaker
+          name="오덕균 이사장"
+          image={Speaker1}
+          imageStyle={{ objectPosition: "20px 0" }}
+        />
         <SingleSpeaker name="정준호 이사" image={Speaker2} />
         <SingleSpeaker
           name="권혁준 고문"
           image={Speaker3}
           imageclassName="mirror-image"
+          imageStyle={{ objectPosition: "-1px 35px", scale: 1.4 }}
         />
       </div>
     </section>

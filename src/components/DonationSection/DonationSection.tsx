@@ -13,7 +13,6 @@ const DonationSection = () => {
           국민 924501-01-351204 / 사단법인 사색의향기
         </p>
         <div className="donation-buttons-container">
-          {/* Add Hover Effect */}
           <button type="button" className="donation-button">
             <HandShakeIcon />
             정기 후원

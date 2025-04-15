@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 .chairman-title {
   font-size: 28px;
@@ -43,19 +44,27 @@
 
 .chairman-pic-container {
   position: relative;
+  width: 100%;
 }
 
 .chairman-pic {
-  height: 400px;
+  max-height: 200px;
   width: auto;
+  margin-left: auto;
   object-fit: cover;
 }
 
 .background-arc {
   position: absolute;
   z-index: -1;
+  background-color: var(--denim);
   bottom: 0;
-  margin-left: -2rem;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  height: 77.7%;
+
+  right: -100vw;
+  left: 0rem;
 }
 
 .other-speakers {
@@ -67,9 +76,6 @@
 @media (min-width: 768px) {
   .speakers-container {
     padding: 4rem 3rem;
-  }
-  .background-arc {
-    margin-left: -3rem;
   }
 
   .chairman-title {
@@ -86,6 +92,30 @@
   .speakers-container > *:not(:last-child) {
     margin-bottom: 120px;
   }
+  .chairman-pic {
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chairman-section {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .chairman-section > div:first-child {
+    max-width: 58%;
+  }
+
+  .chairman-pic-container {
+    flex-grow: 1;
+    width: unset;
+    max-width: 34%;
+  }
+  .chairman-pic {
+    max-width: 74%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -95,30 +125,30 @@
   .signature-container p {
     font-size: 24px;
   }
-  .background-arc {
-    margin-left: -3.75rem;
-  }
 
   .chairman-title {
     font-size: 60px;
   }
 
-  .chairman-section {
-    gap: 16px;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-  }
-
-  .chairman-section > div:first-child {
-    max-width: 60%;
-  }
-
-  .chairman-pic-container {
-    flex-grow: 1;
+  .chairman-pic {
+    max-height: 400px;
   }
   .other-speakers {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1536px) {
+  :root {
+    --x: calc(min(120px, (100vw - 1280px) * 0.1));
+  }
+
+  .chairman-section > div:first-child {
+    max-width: calc(58% + var(--x));
+  }
+
+  .chairman-pic-container {
+    transform: translateX(var(--x));
   }
 }

@@ -6,6 +6,8 @@ import BelowSpeakers from "./components/BelowSpeakers/BelowSpeakers";
 import DonationSection from "./components/DonationSection/DonationSection";
 import AppSection from "./components/AppSection/AppSection";
 import Supporters from "./components/Supporters/Supporters";
+import Footer from "./components/Footer/Footer";
+import FadeIn from "./components/FadeIn/FadeIn";
 
 function App() {
   return (
@@ -13,13 +15,20 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <BelowHero />
-        <Speakers />
-        <BelowSpeakers />
-        <DonationSection />
-        <AppSection />
-        <Supporters />
+        {[
+          <BelowHero />,
+          <Speakers />,
+          <BelowSpeakers />,
+          <DonationSection />,
+          <AppSection />,
+          <Supporters />,
+        ].map((component, index) => (
+          <FadeIn key={index}>{component}</FadeIn>
+        ))}
       </main>
+      <FadeIn>
+        <Footer />
+      </FadeIn>
     </>
   );
 }

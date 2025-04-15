@@ -18,6 +18,10 @@
 .app-icon {
   margin-bottom: 24px;
 }
+.app-icon-svg {
+  width: 72px;
+  height: 73px;
+}
 .app-title {
   font-size: 28px;
   font-weight: 700;
@@ -70,6 +74,10 @@
   }
   .app-icon {
     margin-bottom: 40px;
+  }
+  .app-icon-svg {
+    width: 96px;
+    height: 97px;
   }
   .app-title {
     font-size: 60px;

@@ -4,6 +4,7 @@
   align-items: center;
   padding: 0 2rem;
   height: 100px;
+  position: relative;
 }
 
 .nav {
@@ -35,8 +36,43 @@
   font-weight: 500;
 }
 
-.hamburger {
+.hamburger,
+.close-btn {
   padding: 5px;
+}
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0; /* Start off-screen */
+  width: 80vw; /* Width of the sidebar */
+  height: 100vh;
+  transform: translateX(100%);
+  padding: 2rem 0;
+  background-color: var(--background-secondary);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it appears above other content */
+  transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+.sidebar-links li {
+  padding: 1rem 32px;
+  font-size: 18px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 999; /* Ensure it appears above other content */
 }
 
 /* Tablet styles */

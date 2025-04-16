@@ -68,7 +68,7 @@ function Hero() {
               }}
               src={images[imageIndex].src}
               alt={images[imageIndex].alt}
-              loading="lazy"
+              loading="eager"
             />
           </AnimatePresence>
         </div>

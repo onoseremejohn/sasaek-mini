@@ -23,7 +23,7 @@ function Speakers() {
           </p>
           <div className="signature-container">
             <p>사단법인 사색의향기 이사장 오덕균</p>
-            <img src={Signature} alt="Chairman Signature" />
+            <img src={Signature} alt="Chairman Signature" loading="lazy" />
           </div>
           <button
             type="button"
@@ -42,7 +42,17 @@ function Speakers() {
           </button>
         </div>
         <div className="chairman-pic-container">
-          <img src={Chairman} alt="Chairman" className="chairman-pic" />
+          {/* <LazyLoadImage
+            src={Chairman}
+            alt="Chairman"
+            className="chairman-pic"
+          /> */}
+          <img
+            src={Chairman}
+            alt="Chairman"
+            className="chairman-pic"
+            loading="lazy"
+          />
 
           <div className="background-arc" />
         </div>

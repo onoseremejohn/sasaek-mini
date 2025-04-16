@@ -68,9 +68,7 @@ function Hero() {
               }}
               src={images[imageIndex].src}
               alt={images[imageIndex].alt}
-              loading="lazy" // Lazy load the image
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px" // Responsive sizes
-              srcSet={`${images[imageIndex].src} 1200w, ${images[imageIndex].src}?w=800 800w, ${images[imageIndex].src}?w=400 400w`}
+              loading="lazy"
             />
           </AnimatePresence>
         </div>

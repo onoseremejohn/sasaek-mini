@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header className="header">
-      <img src="/logo.svg" alt="Logo" /> {/* Optimize image */}
+      <img src="/logo.svg" alt="Logo" loading="lazy" /> {/* Optimize image */}
       <nav className="nav">
         <ul className="nav-links">
           <li>

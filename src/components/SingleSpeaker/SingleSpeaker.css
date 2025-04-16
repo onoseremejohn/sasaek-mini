@@ -36,12 +36,20 @@
 
   .single-speaker-image-container {
     margin-bottom: 20px;
-    width: 270px;
-    height: 270px;
+  }
+}
+@media (min-width: 1024px) {
+  .single-speaker-image-container {
+    width: 220px;
+    height: 220px;
   }
 }
 @media (min-width: 1200px) {
   .single-speaker-name {
     font-size: 24px;
+  }
+  .single-speaker-image-container {
+    width: 270px;
+    height: 270px;
   }
 }

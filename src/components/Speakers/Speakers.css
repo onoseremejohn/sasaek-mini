@@ -95,6 +95,10 @@
   .chairman-pic {
     max-height: 300px;
   }
+  .other-speakers {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -132,10 +136,6 @@
 
   .chairman-pic {
     max-height: 400px;
-  }
-  .other-speakers {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 

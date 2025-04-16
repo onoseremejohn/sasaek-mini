@@ -26,9 +26,7 @@ function App() {
           <FadeIn key={index}>{component}</FadeIn>
         ))}
       </main>
-      <FadeIn>
-        <Footer />
-      </FadeIn>
+      <Footer />
     </>
   );
 }

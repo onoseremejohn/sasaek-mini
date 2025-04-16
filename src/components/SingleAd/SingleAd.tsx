@@ -17,7 +17,7 @@ const SingleAd: React.FC<SingleAdProps> = ({
 }) => {
   return (
     <div className={`single-ad ${textPosition}`}>
-      <img src={image} alt={alt} />
+      <img src={image} alt={alt} loading="lazy" />
       <div className="single-ad-text">
         <p>{smallText}</p>
         <h3>{bigText}</h3>

@@ -22,6 +22,7 @@ const SingleSpeaker: React.FC<SingleSpeakerProps> = ({
           alt={name}
           className={imageclassName}
           style={{ ...imageStyle }}
+          loading="lazy"
         />
       </div>
       <p className="single-speaker-name">{name}</p>

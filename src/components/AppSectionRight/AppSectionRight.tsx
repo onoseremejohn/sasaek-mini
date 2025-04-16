@@ -1,5 +1,5 @@
 import "./AppSectionRight.css";
-// import Tents from "../../assets/tents.png";
+import Tents from "../../assets/tents.png";
 import {
   MobileIcon,
   BellWithNotifications,
@@ -10,11 +10,16 @@ import {
   PenIcon,
 } from "../../icons";
 import Mould from "../../assets/mould.png";
+import LazyLoadBackground from "../LazyLoadBackground";
 
 const AppSectionRight = () => {
   return (
     <div className="app-section-right">
-      <div className="phone-up">
+      <LazyLoadBackground
+        backgroundImage={Tents}
+        backgroundFallback="#949191"
+        className="phone-up"
+      >
         <div>
           <div className="mobile-header">
             <div>
@@ -72,7 +77,7 @@ const AppSectionRight = () => {
             </p>
           </div>
         </div>
-      </div>
+      </LazyLoadBackground>
       <div className="phone-down">
         <div
           style={{
@@ -108,6 +113,7 @@ const AppSectionRight = () => {
                 width: "100%",
                 objectFit: "cover",
               }}
+              loading="lazy"
             />
           </div>
           <div className="footer-icon">

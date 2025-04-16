@@ -1,6 +1,5 @@
 import "./BelowHero.css";
 import CultureImage from "../../assets/culture-image.png";
-// import { useState } from "react";
 
 function BelowHero() {
   return (
@@ -10,7 +9,7 @@ function BelowHero() {
           <p>새로운 문화 나눔을 만들어갑니다.</p>
           <div style={{}} className="culture-image-text-container">
             <p>우리는</p>
-            <img src={CultureImage} alt="Culture" className="culture-image" />
+            <img src={CultureImage} alt="Culture" className="culture-image" loading="lazy"/>
           </div>
           <p>사색의향기입니다.</p>
         </div>

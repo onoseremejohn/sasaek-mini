@@ -9,7 +9,7 @@
   align-items: center;
   padding: 16px;
   overflow: hidden;
-  border-radius: 48px;
+  border-radius: 24px;
   border-bottom-right-radius: 0;
   justify-content: center;
 }
@@ -21,7 +21,7 @@
   z-index: 1;
   background-color: var(--background-secondary);
   overflow: hidden;
-  border-radius: 48px;
+  border-radius: 24px;
 }
 
 .hero-img-container img {
@@ -41,7 +41,7 @@
   height: 63px;
   border-radius: 50%;
   background-color: transparent;
-  box-shadow: 24px 24px 0 #fff;
+  box-shadow: 27px 27px 0 #fff;
   z-index: 3;
 }
 .hero-overlay::before {
@@ -57,7 +57,7 @@
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 48px;
+  border-radius: 24px;
   z-index: 1;
 }
 
@@ -186,6 +186,12 @@
   .hero-overlay::after,
   .hero-overlay::before {
     display: block;
+  }
+  .hero-img-container {
+    border-radius: 48px;
+  }
+  .hero-overlay {
+    border-radius: 48px;
   }
 }
 

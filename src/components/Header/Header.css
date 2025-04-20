@@ -49,14 +49,14 @@
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0; /* Start off-screen */
-  width: 80vw; /* Width of the sidebar */
+  right: 0;
+  width: 80vw;
   height: 100vh;
   transform: translateX(100%);
   padding: 2rem 0;
   background-color: var(--background-secondary);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 1000; /* Ensure it appears above other content */
+  z-index: 1000;
   transition: transform 0.3s ease;
 }
 
@@ -71,8 +71,8 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  z-index: 999; /* Ensure it appears above other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 /* Tablet styles */

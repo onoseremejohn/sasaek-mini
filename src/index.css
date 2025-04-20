@@ -1,4 +1,3 @@
-/* CSS Reset */
 :root {
   --interactive-primary: #8c5947;
   --primary-color: #111111;
@@ -14,6 +13,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* CSS Reset */
 
 html {
   line-height: 1.15; /* Improve readability of just about everything */
